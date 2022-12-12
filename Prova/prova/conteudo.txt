@@ -1,0 +1,61 @@
+type(lista) - retorna o tipo da variavel
+len(lista) - retorna o tamanho da variavel
+lista.append(x) - adiciona um novo indice ao final da lista
+lista.append(x,x[x,x]) - adiciona uma lista dentro de uma lista
+lista.remove(x) - remove a primeira ocorrencia do indice indice
+lista.insert(posicao, x) - adiciona um novo indice a uma posicao especifica
+lista.extend([x,x]) - estende a lista adicionando uma sequencia de valores a mesma
+range(len(x))=retorna o tamanho do item de 0 até seu range
+list(range(len(x))) = retorna o tamanho enumerando posicao a posicao
+list(enumerate(x)) = enumerando a posicao e o item
+sorted(lista) = ordena a lista de forma crescente
+sorted(lista, reverse = True) = ordena a lista de forma decrescente
+list(reverse(lista)) = ordena a lista de forma inversa
+reverse
+lista.sort() = ordena a lista de forma crescente de forma permanente
+key=x - escolhe uma chave 
+lista[x: x : x] posicao inicial até posição  final de tanto em tanto
+[x]*x - repeticao do indice
+lista.pop() - remove ultimo indice da lista
+lista = lista[:] - copia independente
+del list[x]- deleta um indice especifico
+index(x[,start[, end]]) remove o primero encontrado
+count(x) - conta a quantidade de aparicoes
+find(x) - procurar uma sequencia  dentro de uma string
+rfind(x) -procurar uma sequencia  dentro de uma string (direta p  esquerda)
+join() transformma uma lista em string
+lista=' '. join(x)
+x.replace(x por x)- troca o conteudo de uma string
+x.strip -  excluir espacos em branco
+x.lstrip - excluir espacos em branco da esquerda
+x.rstrip -  excluir espacos em branco da direita
+x.isdigt() - retorna se na string so existir numeros
+x.islower() -  retorna se todos os carateres estiverem maiusculos
+x.upper() - tranforma em maiusculos
+x.lower() - tranforma em minusculo
+
+lista.copy() - copia uma lista
+set.add(x) - adiciona ao set
+frozenset(set) - congela a sequencia
+set(lista.split())- retira os espaços não repetindo as sequencia
+dict.get(x,0) - retorna 0 se não estiver na lista
+dict['a'] = x - adiciona dicionario
+del dict[x]= - deleta o item do dicionario
+dict.keys() = tudo antes do :
+dict.values() = depois do :
+dict.itens() = retorna os itens do dicionario
+
+#
+    idades_no_ano_que_vem = []
+    for idade in idades:
+    idades_no_ano_que_vem.append(idade+1)
+    idades_no_ano_que_vem
+
+#adicone mais a idade, para cada idade na lista de idades
+
+    idades_no_ano_que_vem = [idade+1 for idade in idades]
+    idades_no_ano_que_vem
+
+# mostre a idade para cada idade na lista de idades que forem maiores que 21
+
+    [idade for idade in idades if idade > 21]

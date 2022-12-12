@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    /* border: 1px solid black; */
+    /* padding: 8px;
+    margin: 2px; */
+}
+
+/* @font-face {
+    font-family: Roboto;
+    src: url(../font/roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url(../font/roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../font/roboto/Roboto-Bold.ttf), url(../font/roboto/Roboto-Light.ttf), url(../font/roboto/Roboto-Medium.ttf), url(../font/roboto/Roboto-Regular.ttf);
+} */
+
+body {
+    font-family: Roboto;
+    overflow-x: hidden;
+}
+
+:is(h2, div).border-bottom {
+    border-width: 3px !important;
+}
+
+.texto-cartao {
+    position: relative;
+    left: -120px;
+    top: 30px;
+}
+
+.opacity-50 {
+    opacity: .5;
+}
+
+.go-green {
+    background-image: url(../img/group20.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 80%;
+    padding-bottom: 80px !important;
+}
+
+.navegacao li {
+    padding-left: 60px !important;
+    background-size: 27px auto;
+    background-repeat: no-repeat;
+    background-position: 15px;
+}
+.navegacao .conta {
+    background-image: url(../img/icon01.png);
+}
+.navegacao .emprestimo {
+    background-image: url(../img/icon02.png);
+}
+.navegacao .detalhes {
+    background-image: url(../img/icon03.png);
+    background-size: 18px;
+    background-position: 20px;
+}
+.navegacao .pagamentos {
+    background-image: url(../img/icon04.png);
+}
+.navegacao .transferencias {
+    background-image: url(../img/icon05.png);
+}
+.navegacao .account-settings {
+    background-image: url(../img/icon06.png);
+}

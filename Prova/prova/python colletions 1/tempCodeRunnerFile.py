@@ -1,0 +1,1 @@
+ aparicoes[palavra] = ate_agora + 1

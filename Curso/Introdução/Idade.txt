@@ -1,0 +1,25 @@
+Progama
+{
+	funcao incio{
+		inteiro idade,
+		
+		escreva("Qual a sua Idade?")
+		leia(idade),
+
+		se(idade >= 0 && idade <= 12){
+			escreva("Voce e uma crianca"),
+		}se nao{ 
+			se(idade >= 13 && idade <= 18){
+				escreva("Vocé e um adolescente"),
+			}se nao{ 
+				se(idade >= 19 && idade <= 65){
+					escreva("Voce e um adulto"),
+				}se nao{ 
+					escreva("Voce e um Anciao"),
+				}
+			}
+		}
+	}	
+}	
+	
+}

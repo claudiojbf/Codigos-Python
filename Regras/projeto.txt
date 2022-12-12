@@ -1,0 +1,5 @@
+email:
+globo.com
+gmail.com
+hotmail.com
+yahoo.com

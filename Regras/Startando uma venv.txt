@@ -1,0 +1,6 @@
+python -m venv ./nome_da_pasta
+no cmd ou power shell com tudoja ok rode
+venv/Scripts/activate
+instalando o django
+
+pip install django

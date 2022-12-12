@@ -1,0 +1,9 @@
+Descrição
+quantidade de funcionario
+email
+numero
+linkedin
+instagra
+area de atuação
+Ramo
+Tipo de Empresa

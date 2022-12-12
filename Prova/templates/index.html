@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="row p-0 m-0">
+        <div class="col d-flex justify-content-center align-items-center">
+            <img src= "{% static 'img/group9.png' %}" alt="">
+        </div>
+        <div class="col-10 p-0">
+            <img class="w-100" src="{% static 'img/group21.png' %}" alt="">
+            <div class="row m-0">
+                <div class="col">
+                    <h2 class="h6 text-secondary mt-3">Saldo:</h2>
+                    <p class="h1 text-success">
+                        {{conta.saldo}}<br>
+                        BRL
+                    </p>
+                    <h2 class="h6 text-secondary mt-3">Gastos</h2>
+                    <p class="h1 text-success">
+                        {{gastos}} BRL<br>
+                        na média
+                    </p>
+                </div>
+                <div class="col bg-light text-secondary p-3 pt-4">
+                    <div class="d-flex">
+                        <img class="align-self-start mt-2 mr-3" src="{% static 'img/icon07.png' %}" alt="">
+                        <p>
+                            Data:<br>
+                            23 de agosto de 2022
+                        </p>
+                    </div>
+                    <div class="d-flex">
+                        <img class="align-self-start mt-2 mr-3" src="{% static 'img/icon07.png' %}" alt="">
+                        <p>
+                            Hora:<br>
+                            15:31
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="container mt-2">
+                        <div class="d-flex mb-5">
+                            <h2 class="flex-grow-1 h1 text-primary">{{conta.usuario.nome}}</h2>
+                            <img src="{% static 'img/group13.png' %}" alt="">
+                        </div>
+                        <div class="w-50 d-flex flex-column float-right">
+                            <button type="button" class="btn btn-outline-secondary mb-1"><img src="{% static 'img/icon06.png' %}" alt=""> Profile Settings</button>
+                            <button type="button" class="btn btn-primary">Logout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row m-0">
+        <div class="col p-0">
+            <h2 class="h4 bg-success text-white p-3 pl-4 pr-4 mb-0">Visão Geral</h2>
+            <ul class="list-group navegacao">
+                <li class="conta list-group-item border-0 text-secondary bg-light rounded-0">Conta</li>
+                <li class="emprestimo list-group-item border-0 text-secondary list-group-item-dark">Deposito</li>
+                <li class="detalhes list-group-item border-0 text-secondary bg-light">Detalhes</li>
+                <li class="pagamentos list-group-item border-0 text-secondary list-group-item-dark">Pagamentos</li>
+                <li class="transferencias list-group-item border-0 text-secondary bg-light">Transferências</li>
+                <li class="account-settings list-group-item border-0 text-secondary list-group-item-dark rounded-0">Account Settings</li>
+            </ul>
+            <div class="text-center mt-4">
+                <img src="{% static 'img/group1.png' %}" alt="">
+            </div>
+        </div>
+        <div class="col-10">
+            <div class="row m-3">
+                <div class="col bg-light text-secondary p-4 rounded">
+                    <h2 class="text-primary border-bottom border-primary">Seu Cartão</h2>
+                    <div class="d-flex justify-content-center mt-5 p-3 position-relative border-bottom">
+                        <img src="{% static 'img/group18.png' %}" alt="">
+                        <div class="position-absolute">
+                            <div class="texto-cartao text-white">
+                                <p class="h2">{{conta.usuario.nome}}</p>
+                                <p class="h1 pt-4 mt-5 mb-5 pb-4">{{conta.saldo}}</p>
+                                <p class="mt-5">{{conta.numero_conta}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="text-primary mt-3">Depositos Recentes</h2>
+                    {% for deposito in depositos %}
+                        <div class="pl-5 pr-5 pt-2 pb-2 border-bottom">
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-0">{{deposito.descricao}}</p>
+                                <p class="mb-0">{{deposito.valor}}</p>
+                            </div>
+                            <p class="mb-0 opacity-50">Depositou</p>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="col-3 mt-5">
+                    <div class="bg-light p-2 mb-3 rounded text-secondary">
+                        <h2 class="text-primary">Despesas</h2>
+                        <p>Diária: R${{gastos}}</p>
+                        <p>Semanal: R$100.00</p>
+                        <p>Mensal: R$450.00</p>
+                    </div>
+                    <div class="go-green bg-light p-2 rounded text-success">
+                        <h4>Go Green</h4>
+                        <h5>Inscreva-se</h5>
+                        <h5>Mobilize-se</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,3 @@
+Abra o power shell como adm 
+execute 
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned

@@ -1,0 +1,159 @@
+<html>
+<head>
+	<title>Loja de Pneus</title>
+	<meta charset="utf-8">
+</head> 
+<body style="background-color:'blue'" style="color:'white'">
+<h1>PneuStore</h1>
+
+<h2>Trabalhamos com as seguintes marcas</h3>
+<p>1. Michelin</p>
+<p>2. Bridgestone</p>
+<p>3. Goodyear</p>
+<p>4. Continental</p>
+<p>5. Yokohama</p>
+<p>========================================================</p>
+<script language="vbscript" type="text/vbscript">
+
+Dim pnMichelin(2)
+Dim pnBridgestone(2)//10
+Dim pnGoodyear(2)
+Dim pnContinental(2)
+Dim pnYokohama(2)
+
+Dim prMichelin(2) //15
+Dim prBridgestone(2)
+Dim prGoodyear(2)
+Dim prContinental(2)
+Dim prYokohama(2)
+//20
+Dim escolhaMarc, escolhaMod, quantidade, total
+
+
+pnMichelin(0) = "Michelin Aro 15 LTX Force 235/75R15 105T"
+pnMichelin(1) = "Michelin Aro 16 LTX Force 265/70R16 112T" //25
+prMichelin(0) = 594
+prMichelin(1) = 685
+
+pnBridgestone(0) = "Bridgestone Aro 15 Potenza RE760 195/55R15 85W"
+pnBridgestone(1) = "Bridgestone Aro 16 Turanza ER300 235/60R16 100H" //30
+prBridgestone(0) = 379
+prBridgestone(1) = 499
+
+pnGoodyear(0) = "Goodyear Aro 17 EfficientGrip Performance 225/45R17 94W"
+pnGoodyear(1) = "Goodyear Aro 17 EfficientGrip Performance 225/45R17 94W" //35
+prGoodyear(0) = 379
+prGoodyear(1) = 719
+
+pnContinental(0) = "Continental Aro 14 ContiPowerContact 175/70R14 84T"
+pnContinental(1) = "Continental Aro 14 ContiPowerContact 175/70R14 84T" //40
+prContinental(0) = 299
+prContinental(1) = 204
+
+pnYokohama(0) = "Yokohama  BluEarth ES32 145/65 R15 72H"
+pnYokohama(1) = "Yokohama BluEarth ES32 165/60 R14 75T" //45
+prYokohama(0) = 460
+prYokohama(1) = 480
+
+	escolhaMarc = inputbox("Escolha qual marca de pneu você quer: (1 a 5)")
+	
+		if(escolhaMarc = 1) then
+		Document.write("Esses são os modelos disponiveis: ") & "<br>"
+		Document.write("1. " & " " & pnMichelin(0) & " valor R$ " & prMichelin(0)) & "<br>" 
+		Document.write("2. " & " " & pnMichelin(1) & " valor R$ " & prMichelin(1)) & "<br>" 
+		
+		escolhaMod = inputbox("Escolha qual modelo você quer: (1 ou 2) ")
+		qauntidade = inputbox("Escolha quantos pneus você quer: ")
+		
+		if (escolhaMod = 1) then
+		total = prMichelin(0) * quantidade 
+		Document.write("Você escolheu o pneu: "& pnMichelin(0) & ", quantidade: " & quantidade &" " & "e sua compra deu: R$" & total)	
+		end if
+	
+		if (escolha = 2) then
+		total = prMichelin(1) * quantidade
+		Document.write("Você escolheu o pneu: "& pnMichelin(1) & ", quantidade: " & quantidade &" " & "e sua compra deu: R$" & total)	
+		end if
+	end if
+
+	if(escolhaMarc = 2) then
+		Document.write("Esses são os modelos disponiveis: ") & "<br>"
+		Document.write("1. " & " " & pnBridgestone(0) & " valor R$ " & prBridgestone(0)) & "<br>"
+		Document.write("2. " & " " & pnBridgestone(1) & " valor R$ " & prBridgestone(1)) & "<br>"
+		
+		escolhaMod = inputbox("Escolha qual modelo você quer: (1 ou 2) ")
+		qauntidade = inputbox("Escolha quantos pneus você quer: ")
+		
+		if (escolhaMod = 1) then
+		total = prBridgestone(0) * quantidade
+		Document.write("Você escolheu o pneu: "& pnBridgestone(0) & ", quantidade: " & quantidade &" " & "e sua compra deu: R$" & total)	
+		end if
+	
+		if (escolhaMod = 2) then
+		total = prBridgestone(1) * quantidade
+		Document.write("Você escolheu o pneu: "& pnBridgestone(1) & ", quantidade: " & quantidade &" " & "e sua compra deu: R$" & total)	
+		end if
+	end if
+
+	if(escolhaMarc = 3) then
+		Document.write("Esses são os modelos disponiveis: ") & "<br>"
+		Document.write("1. " & " " & pnGoodyear(0) & " valor R$ " & prGoodyear(0)) & "<br>"
+		Document.write("2. " & " " & pnGoodyear(1) & " valor R$ " & prGoodyear(1)) & "<br>" 
+		
+		escolhaMod = inputbox("Escolha qual modelo você quer: (1 ou 2) ")
+		qauntidade = inputbox("Escolha quantos pneus você quer: ")
+		
+		if (escolhaMod = 1) then
+		total = prGoodyear(0) * quantidade
+		Document.write("Você escolheu o pneu: "& pnGoodyear(0) & ", quantidade: " & quantidade &" " & "e sua compra deu: R$" & total)	
+		end if
+
+		if (escolhaMod = 2) then
+		total = prGoodyear(1) * quantidade
+		Document.write("Você escolheu o pneu: "& pnGoodyear(1) & ", quantidade: " & quantidade &" " & "e sua compra deu: R$" & total)	
+		end if
+	end if
+
+	if(escolhaMarc = 4) then
+		Document.write("Esses são os modelos disponiveis: ") & "<br>"
+		Document.write("1. " & " " & pnContinental(0) & " valor R$ " & prContinental(0)) & "<br>"
+		Document.write("2. " & " " & pnContinental(1) & " valor R$ " & prContinental(1)) & "<br>"
+		
+		escolhaMod = inputbox("Escolha qual modelo você quer: (1 ou 2) ")
+		qauntidade = inputbox("Escolha quantos pneus você quer: ")
+		
+		if (escolhaMod = 1) then
+		total = prContinental(0) * quantidade
+		Document.write("Você escolheu o pneu: "& pncontinental(0) & ", quantidade: " & quantidade &" " & "e sua compra deu: R$" & total)	
+		end if
+	
+		if (escolhaMod = 2) then
+		total = prContinental(1) * quantidade
+		Document.write("Você escolheu o pneu: "& pnContinental(1) & ", quantidade: " & quantidade &" " & "e sua compra deu: R$" & total)	
+		end if
+	end if
+
+	if(escolhaMarc = 5) then
+		Document.write("Esses são os modelos disponiveis: ") & "<br>"
+		Document.write("1. " & " " & pnYokohama(0) & " valor R$ " & prYokohama(0)) & "<br>"
+		Document.write("2. " & " " & pnYokohama(1) & " valor R$ " & prYokohama(1)) & "<br>" & "<br>"
+		
+		escolhaMod = inputbox("Escolha qual modelo você quer: (1 ou 2) ")
+		qauntidade = inputbox("Escolha quantos pneus você quer: ")
+		
+		if (escolhaMod = 1) then
+		total = prYokohama(0) * quantidade
+		Document.write("Você escolheu o pneu: "& pnYokohama(0) & ", quantidade: " & quantidade &" " & "e sua compra deu: R$" & total)	
+		end if
+
+		if (escolhaMod = 2) then
+		total = prYokohama(1) * quantidade
+		Document.write("Você escolheu o pneu: "& pnYokohama(1) & ", quantidade: " & quantidade &" " & "e sua compra deu: R$" & total)	
+		end if
+	end if	
+    
+
+</script>
+
+</body>
+</html>

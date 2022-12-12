@@ -1,0 +1,3 @@
+pip freeze > nome do doc.txt
+para instlar tudo oque esta neste documento 
+pip install -r nome do documento.txt

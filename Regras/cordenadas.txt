@@ -1,0 +1,17 @@
+Projeto Banco SC
+Apps
+Conta
+Cliente
+Deposito
+Trasferencia
+ 
+Onde tem nome colocar o NOME que esta no banco
+
+No numero do cartão mostrar o numero da conta
+
+Onde tem o 20200 mostrar saldo da conta
+
+Gasto e Despesas Mostrar as trasferencias somadas
+
+Trasferencias Recestes mostrar os depositos feitos
+

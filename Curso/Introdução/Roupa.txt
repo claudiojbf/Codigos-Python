@@ -1,0 +1,59 @@
+Progama
+{
+	string cima[],
+	string baixo[],
+	string pes[],
+	inteiro a, b, c,
+
+	cima[0] = "blusa azul",
+	cima[1] = "camiseta verde",
+
+	baixo[0] = "saia amarela",
+	baixo[1] = "shorts branco",
+	baixo[2] = "calca jeans",
+
+	pes[0] = "sandalia",
+	pes[1] = "chinela",
+	pes[2] = "sapato",
+
+	escreva("Qual a parte de cima vc quer vestir?")
+		enquanto(inteiro i=0, i<=2, i++){
+			escreva(i + cima[i]), 		
+		}
+		escreva("9 nenhuma das opcoes"),		
+		leia(a),
+
+	escreva("Qual a parte de baixo vc quer vestir?")
+		enquanto(inteiro i=0, i<=3, i++){
+			escreva(i + cima[i]), 		
+		}
+		escreva("9 nenhuma das opcoes"),		
+		leia(b),
+
+	escreva("Oque vc quer colocar nos pes?")
+		enquanto(inteiro i=0, i<=3, i++){
+			escreva(i + cima[i]), 		
+		}
+		escreva("9 nenhuma das opcoes"),		
+		leia(c),
+	
+	escreva("Seu conjunto de roupas é esse:"),
+
+	se(a != 0){
+		escreve("Sua parte de cima é: " + cima[a]), 
+	}se nao{
+		escreva("Sua parte de cima é: nenhuma"),
+	}
+	
+	se(b != 0){
+		escreve("Sua parte de baixo é: " + baixo[b]), 
+	}se nao{
+		escreva("Sua parte de baixo é: nenhuma"),
+	}
+
+	se(c != 0){
+		escreve("Seu calcado é: " + pes[c]), 
+	}se nao{
+		escreva("Seu calcado é: nenhuma"),
+	}		
+}
